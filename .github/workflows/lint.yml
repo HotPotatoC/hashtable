@@ -26,5 +26,6 @@ jobs:
       - name: golint
         run: |
           go env
+          go get golang.org/x/lint/golint
           go install golang.org/x/lint/golint
           golint ./...
