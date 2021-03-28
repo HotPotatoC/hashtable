@@ -38,7 +38,7 @@ for entry := range ht.Iter() {
 }
 ```
 
-See more examples [here](https://github.com/HotPotatoC/hashtable/examples)
+See more examples [here](https://github.com/HotPotatoC/hashtable/tree/master/examples)
 
 # Contributing
 
