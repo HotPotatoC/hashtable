@@ -40,6 +40,27 @@ for entry := range ht.Iter() {
 
 See more examples [here](https://github.com/HotPotatoC/hashtable/tree/master/examples)
 
+# Methods
+
+```go
+// Set inserts a new key-value pair item into the hash table
+Set(k string, v interface{})
+// Get returns the value of the given key
+// and a boolean which returns false if the
+// lookup result is nil otherwise true
+Get(k string) (interface{}, bool)
+// Remove deletes an item by the given key
+// and returns the deleted count
+Remove(k string) int
+// Iter returns an iterator for the hashtable
+Iter() <-chan *Entry
+// Exist returns true if an item with the given key exists in the table
+// otherwise returns false
+Exist(k string) bool
+// Len represents the size of the hash table
+Len() int
+```
+
 # Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
